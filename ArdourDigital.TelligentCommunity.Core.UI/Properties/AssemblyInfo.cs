@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ArdourDigital.TelligentCommunity.Core.UI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Ardour Digital - Telligent Community - Core UI Library")]
+[assembly: AssemblyDescription("Common UI Code for working with Telligent Community")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ArdourDigital.TelligentCommunity.Core.UI")]
+[assembly: AssemblyCompany("Ardour Digital Limited")]
+[assembly: AssemblyProduct("ArdourDigital - Telligent Community - Core")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
