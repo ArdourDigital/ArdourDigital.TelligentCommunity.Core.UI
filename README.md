@@ -7,6 +7,14 @@ This library should work with the following versions of Telligent Community
 - Telligent Community 9.x
 - Telligent Community 8.x
 
+## Installation
+
+You can install the library by [downloading and referencing the latest version](https://github.com/ArdourDigital/ArdourDigital.TelligentCommunity.Core.UI/releases/latest), or by using nuget:
+
+```
+Install-Package ArdourDigital.TelligentCommunity.Core.UI
+```
+
 ## Features
 
 ### Base Content Fragment Provider
