@@ -9,6 +9,9 @@
     <authors>Ardour Digital Limited</authors>
     <description>Common UI releated classes for use with Telligent Community</description>
     <language>en-US</language>
-    <licenseUrl>https://github.com/ArdourDigital/ArdourDigital.TelligentCommunity.Core.UI/blob/master/LICENSE.txt</licenseUrl>    
+    <licenseUrl>https://github.com/ArdourDigital/ArdourDigital.TelligentCommunity.Core.UI/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/ArdourDigital/ArdourDigital.TelligentCommunity.Core.UI</projectUrl>
+    <copyright>2016 - Ardour Digital Limited</copyright>
+    <tags>Telligent, Telligent Community</tags>    
   </metadata>
 </package>
