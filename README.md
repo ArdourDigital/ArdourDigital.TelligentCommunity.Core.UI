@@ -1,5 +1,7 @@
 # Core UI Library for Telligent Community
 
+![Build Status](https://ardourdigital.visualstudio.com/_apis/public/build/definitions/8b5ba8e6-4059-46da-8ac1-e2bcf922c889/5/badge)
+
 This library provides common UI related functionality for use when working with Telligent Community.
 
 ## Supported Versions
