@@ -33,6 +33,9 @@ namespace ArdourDigital.TelligentCommunity.Core.UI
 
         public virtual void Initialize()
         {
+            #if DEBUG
+                Install(new Version(1, 0, 0, 0));
+            #endif
         }
 
         public virtual void Install(Version lastInstalledVersion)
