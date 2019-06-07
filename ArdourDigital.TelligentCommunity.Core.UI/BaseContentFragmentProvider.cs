@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using Telligent.Evolution.Extensibility.UI.Version1;
 using Telligent.Evolution.Extensibility.Version1;
@@ -33,9 +34,10 @@ namespace ArdourDigital.TelligentCommunity.Core.UI
 
         public virtual void Initialize()
         {
-            #if DEBUG
+            if (IsDeveloperModeEnabled())
+            {
                 Install(new Version(1, 0, 0, 0));
-            #endif
+            }
         }
 
         public virtual void Install(Version lastInstalledVersion)
@@ -74,6 +76,24 @@ namespace ArdourDigital.TelligentCommunity.Core.UI
                     yield return (IContentFragment)Activator.CreateInstance(fragmentType);
                 }
             }
+        }
+
+        protected virtual bool IsDeveloperModeEnabled()
+        {
+            // There are Telligent ways of getting if Developer Mode is enabled
+            // but these require getting hold of services from common libraries,
+            // the ways of doing this and the DLLs that need to be referenced vary
+            // between versions making it awkward to do in a way that supports all
+            // versions. Getting it directly is easy to support (assuming this name
+            // doesn't change).
+            var value = ConfigurationManager.AppSettings["EnableDeveloperMode"];
+
+            if (bool.TryParse(value, out bool result))
+            {
+                return result;
+            }
+
+            return false;
         }
     }
 }

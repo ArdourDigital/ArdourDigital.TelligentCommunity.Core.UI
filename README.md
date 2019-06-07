@@ -6,6 +6,7 @@ This library provides common UI related functionality for use when working with 
 
 ## Supported Versions
 This library should work with the following versions of Telligent Community
+- Telligent Community 10.x
 - Telligent Community 9.x
 - Telligent Community 8.x
 
